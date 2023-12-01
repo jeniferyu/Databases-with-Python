@@ -100,6 +100,7 @@ sqlstr = '''SELECT Track.title, Artist.name, Album.title, Genre.name
             ORDER BY Artist.name LIMIT 3'''
 
 for row in cur.execute(sqlstr):
-    print(str(row[0]), row[1]),str(row[2]),str(row[3])
+    print ("Title:" +  str(row[0]) +  ", Artist:" + str(row[1])  +  ", Album:" + str(row[2])  +  ", Genre:" + str(row[3]))
+
 
 cur.close()
